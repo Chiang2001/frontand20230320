@@ -1,4 +1,4 @@
-button {
+/* button {
     background-color: rgb(16, 131, 112);
     color: #fff;
     border: 0;
@@ -10,4 +10,59 @@ button {
 
 button:hover {
     background-color: rgb(240, 106, 29);
+} */
+
+#contact-form {
+    /* text-align: right; */
+    border: 1px solid #000;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #7895b7;
+}
+
+label {
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.input-text {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 30px;
+}
+
+select {
+    width: 80%;
+    height: 50px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+button {
+    border: 0;
+    background: #7565b0;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover {
+    background: #5d769e;
+}
+
+.fn {
+    text-align: right;
 }
