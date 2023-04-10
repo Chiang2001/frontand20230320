@@ -99,6 +99,9 @@
     right: -10px;
     top: -10px;
     /* cursor: pointer; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* 消除 a 預設樣式 */
