@@ -61,7 +61,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: red;
+    background: rgb(241, 148, 148);
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -118,3 +118,15 @@ a {
     display: inline-block;
     margin-right: 10px;
 }
+
+.img-resource:hover {
+    background: rgb(134, 134, 242);
+    color: #fff;
+}
+
+/* error */
+/* .img-resource :hover {
+}
+/* error */
+/* :hover {
+} */
