@@ -42,4 +42,17 @@ ul {
 .accordion-content {
     padding: 15px;
     display: none;
+    background:rgb(99, 112, 116)
+}
+
+.accordion-switch:checked + .accordion-title {
+    color: rgb(88, 123, 92)
+}
+
+.accordion-switch:checked ~ .accordion-content {
+    display: block
+}
+
+.accordion-icon-close {
+    display: none
 }
