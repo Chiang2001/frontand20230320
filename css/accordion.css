@@ -45,8 +45,12 @@ ul {
     background:rgb(99, 112, 116)
 }
 
-.accordion-switch:checked + .accordion-title {
-    color: rgb(88, 123, 92)
+.accordion-switch:checked + .accordion-title .accordion-icon-open {
+    display: none;
+}
+
+.accordion-switch:checked + .accordion-title .accordion-icon-open {
+    display: block;
 }
 
 .accordion-switch:checked ~ .accordion-content {
@@ -55,4 +59,8 @@ ul {
 
 .accordion-icon-close {
     display: none
+}
+
+.accordion-switch {
+    display: none;
 }
