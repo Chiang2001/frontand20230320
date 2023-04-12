@@ -139,3 +139,69 @@ a {
 .slider-dots li:nth-child(2) .slider-dot {
     background:rgb(140, 214, 215);
 }
+
+.table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.table td,
+.table th {
+    border: 1px solid #dedede;
+    padding: 10px;
+}
+.table tbody tr {
+    background: #dedede;
+}
+/* 單數 */
+.table tbody tr:nth-child(odd) {
+    background: rgb(147, 147, 214);
+}
+/* 雙數 */
+.table tbody tr:nth-child(even) {
+    background: rgb(111, 168, 159);
+}
+.menu-item li {
+    margin-right: 20px;
+    background: blue;
+}
+.menu-item li:last-child {
+    margin-right: 0;
+}
+.menu-item li:nth-child(7) {
+    color: red;
+}
+.block {
+    position: relative;
+}
+.block::before {
+    content: 'Betty ';
+}
+.block::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background: yellow;
+    position: absolute;
+    right: 0;
+}
+
+.group1 .switch + .item {
+    color: red;
+}
+
+.group2 .switch + .item {
+    color: red;
+}
+
+/* .group1 .switch ~ .item {
+    color: red;
+}
+.group2 .switch ~ .item {
+    color: red;
+} */
