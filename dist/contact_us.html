@@ -1,49 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML contact us</title>
     <link rel="stylesheet" href="css/contact_us.css">
-
-    <!-- <style>
-        label {
-            background: rgb(178, 238, 168);
-            font-size: 30px;
-        }
-
-        #fullname{
-            background: rgb(244, 151, 151);
-            width: 100%;
-            height: 80px;
-            font-size: 50px;
-
-        }
-        .radio{
-            width: 100px;
-            height: 100px;
-        }
-    </style> -->
 </head>
 
 <body>
-    <!-- <form method="post" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php"> -->
     <form id="contact-form" method="post" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php">
-    
         <div>
             <div>
                 <label for="fullname">全名</label>
-                <!-- <label for="fullname" style="color: rgb(128, 49, 237);">全名</label> -->
             </div>
             <div>
-                <!-- <input type="text" name="fullname" id="fullname"> -->
                 <input type="text" name="fullname" id="fullname" class="input-text">
             </div>
         </div>
         <div>
             <div>
-                <label for="gender">性別</label>
+                <label for="gender" class="label">性別</label>
             </div>
             <div>
                 <input type="radio" class="radio" name="gender" id="gender-m">
@@ -83,7 +61,6 @@
                 <label for="remark">其他建議</label>
             </div>
             <div>
-                <!-- <textarea name="remark" id="remark" cols="30" rows="10"></textarea> -->
                 <textarea name="remark" id="remark"></textarea>
             </div>
         </div>

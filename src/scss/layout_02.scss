@@ -152,27 +152,32 @@ a {
     border-collapse: collapse;
     margin-top: 10px;
     margin-bottom: 10px;
+
+    td {
+        border: 1px solid #dedede;
+        padding: 10px;
+    }
+
+    th {
+        border: 1px solid #dedede;
+        padding: 10px;
+    }
+
+    tbody tr {
+        background: #dedede;
+
+        /* 單數 */
+        &:nth-child(odd) {
+            background: blue;
+        }
+
+        /* 雙數 */
+        &:nth-child(even) {
+            background: red;
+        }
+    }
 }
 
-.table td,
-.table th {
-    border: 1px solid #dedede;
-    padding: 10px;
-}
-
-.table tbody tr {
-    background: #dedede;
-}
-
-/* 單數 */
-.table tbody tr:nth-child(odd) {
-    background: blue;
-}
-
-/* 雙數 */
-.table tbody tr:nth-child(even) {
-    background: red;
-}
 
 .menu-item li {
     margin-right: 20px;
@@ -189,24 +194,28 @@ a {
 
 .block {
     position: relative;
+
+    &::before {
+        content: 'David ';
+    }
+
+    &::after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        background: yellow;
+        position: absolute;
+        right: 0;
+    }
 }
 
-.block::before {
-    content: 'David ';
-}
-
-.block::after {
-    content: '';
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    background: yellow;
-    position: absolute;
-    right: 0;
-}
-
-.group1 .switch + .item {
-    color: red;
+.group1 {
+    .switch {
+        +.item {
+            color: rgb(79, 39, 189);
+        }
+    }
 }
 
 .group2 .switch + .item {

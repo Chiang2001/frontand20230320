@@ -11,7 +11,7 @@ ul {
 }
 
 .title, .type {
-    color: #9c90dc;
+    color: #5C6BC0;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -27,7 +27,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background: rgb(230, 171, 208);
+    background: rgb(31, 170, 212);
     color: #fff;
     font-size: 30px;
     font-weight: 700;
@@ -36,29 +36,29 @@ ul {
 }
 
 .accordion-title:hover {
-    background: rgb(128, 187, 205);
+    background: rgb(22, 142, 179);
 }
 
 .accordion-content {
     padding: 15px;
     display: none;
-    background:rgb(99, 112, 116)
+    background: #c1d4ff;
 }
 
 .accordion-switch:checked + .accordion-title .accordion-icon-open {
     display: none;
 }
 
-.accordion-switch:checked + .accordion-title .accordion-icon-open {
+.accordion-switch:checked + .accordion-title .accordion-icon-close {
     display: block;
 }
 
 .accordion-switch:checked ~ .accordion-content {
-    display: block
+    display: block;
 }
 
 .accordion-icon-close {
-    display: none
+    display: none;
 }
 
 .accordion-switch {

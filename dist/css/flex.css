@@ -1,3 +1,7 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
 .flex {
     display: flex;
     background: yellow;
@@ -37,7 +41,7 @@
 }
 
 .flex-wrap-r {
-    flex-wrap: wrap-reverse
+    flex-wrap: wrap-reverse;
 }
 
 .jc-e {
@@ -63,5 +67,5 @@
 }
 
 .ai-c {
-    align-items: center; 
+    align-items: center;
 }

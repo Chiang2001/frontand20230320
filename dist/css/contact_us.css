@@ -1,16 +1,10 @@
-/* button {
-    background-color: rgb(16, 131, 112);
-    color: #fff;
-    border: 0;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: 700;
-    cursor: pointer;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-
-button:hover {
-    background-color: rgb(240, 106, 29);
-} */
 
 #contact-form {
     /* text-align: right; */
@@ -18,7 +12,7 @@ button:hover {
     width: 500px;
     margin: auto;
     padding: 20px;
-    background: #7895b7;
+    background: #b1d6ff;
 }
 
 label {
@@ -28,7 +22,7 @@ label {
 }
 
 .input-text {
-    width: 80%;
+    width: 100%;
     height: 50px;
     margin-bottom: 15px;
     padding-left: 15px;
@@ -37,14 +31,14 @@ label {
 }
 
 select {
-    width: 80%;
+    width: 100%;
     height: 50px;
     font-size: 30px;
     margin-bottom: 15px;
 }
 
 textarea {
-    width: 80%;
+    width: 100%;
     height: 100px;
     resize: none;
     margin-bottom: 15px;
@@ -52,15 +46,16 @@ textarea {
 
 button {
     border: 0;
-    background: #7565b0;
+    background: #1c4fbe;
     color: #fff;
     padding: 10px 20px;
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
 }
+
 button:hover {
-    background: #5d769e;
+    background: #eeb20e;
 }
 
 .fn {

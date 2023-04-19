@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML button</title>
 </head>
 <body>
-    <button id="do-btn">我是大按鈕</button>
-    <script>
-        let btn = document.querySelector('#do-btn')
-    
-        btn.addEventListener('click', (e) => {
-            alert('你點到我了啦')
-        })
-    </script>
+    <button id="do-btn">我是按鈕</button>
+    <form action="">
+        <input type="text" name="first_name">
+        <button>送出表單</button>
+        <button type="button">重新填寫</button>
+    </form>
 </body>
+<script>
+    let btn = document.querySelector('#do-btn');
+
+    btn.addEventListener('click', () => {
+        alert('You click me.');
+    })
+</script>
 </html>

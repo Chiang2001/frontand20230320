@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css 選擇器特性</title>
+    <title>CSS 選擇器特性</title>
 </head>
-
-<style>
-    div{
-        color:rgb(133, 111, 244)
-    }
-
-    span{
-        color:rgb(110, 165, 165) !important
-    }
-    span{
-        color:rgb(155, 31, 31)
-    }
-</style>
-
 <body>
-    <div><h1>江</h1></div>
-    <span><h2>江江</h2></span>
+
+    <style>
+        div {
+            color:red;
+        }
+
+        span {
+            color: blue !important;
+        }
+
+        span {
+            color: green;
+        }
+    </style>
+
+    <div>一號</div>
+    <span>二號</span>
     <span>
-        <div style=" color: rgb(233, 121, 134)"><h3>江江江</h3></div>
+        <div style="color:yellow">三號</div>
     </span>
 </body>
 </html>
