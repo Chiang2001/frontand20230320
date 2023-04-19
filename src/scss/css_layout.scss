@@ -13,39 +13,46 @@ body {
 }
 
 .header {
-    background: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    height: 100px;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
 
-    .menu {
-        ul {
-            list-style-type: none;
-            display: flex;
+    .header-content {
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        height: 100px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
 
-            li {
-                text-align: center;
-                margin-right: 15px;
-                font-family: 'Noto Sans TC', sans-serif;
-                font-size: 18px;
+        .menu {
+            ul {
+                list-style-type: none;
+                display: flex;
 
-                &:hover {
-                    color: #9b88bf;
-                }
+                li {
+                    text-align: center;
+                    margin-right: 15px;
+                    font-family: 'Noto Sans TC', sans-serif;
+                    font-size: 18px;
 
-                &:last-child {
-                    margin-right: 0;
-                }
+                    &:hover {
+                        color: rgb(47, 47, 248);
+                    }
 
-                .en {
-                    text-transform: uppercase; 
-                    font-size: 14px;
-                    font-weight: 800;
-                    font-family: 'Courier New', Courier, monospace;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    .en {
+                        text-transform: uppercase; 
+                        font-size: 14px;
+                        font-weight: 800;
+                        font-family: 'Courier New', Courier, monospace;
+                    }
                 }
             }
         }
@@ -65,17 +72,23 @@ body {
     }
 }
 
-.join-form-content {
-    background: rgb(178, 157, 235);
-    display:flex;
-    justify-content: space-between;
+.join-form{
+    height: 100vh;
+    background-color: aqua;
 
-    >div {
-        width: 50%;
+    .join-form-content {
+        background: rgb(255, 210, 210);
+        display:flex;
+        justify-content: space-between;
+
+        >div {
+            width: 50%;
+        }
     }
 }
 
 
 .wrap {
     height: 100vh;
+    background:rgb(102, 142, 119);
 }
