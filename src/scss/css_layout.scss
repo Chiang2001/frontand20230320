@@ -1,12 +1,13 @@
 @import 'reset';
 
-body {
+body,html {
     background: #000;
+    scroll-behavior: smooth;
 }
 
 
 .container {
-    max-width: 700px;
+    max-width: 800px;
     height: 100%;
     position: relative;
     margin: auto;
@@ -123,24 +124,7 @@ body {
                 }
             }
 
-            .slogan {
-                font-size: 30px;
-                text-align: center;
-                position: relative;
-                padding-bottom: 10px;
-                margin-bottom: 15px;
 
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: calc(50% - 140px);
-                    width: 0;
-                    height: 3px;
-                    border-left: solid 100px #1072c2;
-                    border-right: solid 180px #fff;
-                }
-            }
 
             .text-content {
                 line-height: 30px;
@@ -187,9 +171,43 @@ body {
     }
 }
 
+.slogan {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 140px);
+        width: 0;
+        height: 3px;
+        border-left: solid 100px #1072c2;
+        border-right: solid 180px #fff;
+    }
+}
 
 
-.wrap {
+
+.courses {
     height: 100vh;
     background: rgb(102, 142, 119);
+    background-image: url(../images/process.jpeg);
+    background-size: cover;
+    position: relative;
+    color:#fff;
+    padding-top: 120px;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.356);
+    }
 }
