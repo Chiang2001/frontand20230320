@@ -216,7 +216,7 @@ html {
 .flow .item .circle {
   width: 30px;
   height: 30px;
-  background: rgb(232, 142, 142);
+  background: rgb(78, 125, 125);
   border-radius: 30px;
   position: relative;
   z-index: 2;
@@ -224,6 +224,15 @@ html {
 .flow .item .text {
   position: absolute;
   left: calc(50% + 50px);
-  background: rgb(233, 203, 120);
+  background: rgb(98, 143, 106);
   padding: 20px;
+  border-radius: 6px;
+}
+.flow .item .text h4 {
+  margin-bottom: 15px;
+}
+.flow .item:nth-child(even) .text {
+  left: unset;
+  right: calc(50% + 50px);
+  text-align: right;
 }/*# sourceMappingURL=css_layout.css.map */
